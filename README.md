@@ -7,7 +7,7 @@
 - ESLint
 - VSCode Integration
 - Multiple Configurations (Devtools, Chromedriver, Sauce Labs)
-- Cross Platform Example Tests (TODO)
+- Cross Platform Example Tests
 - Page Object Model
 
 ## Known Limitations
