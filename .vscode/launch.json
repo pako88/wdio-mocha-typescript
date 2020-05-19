@@ -12,7 +12,7 @@
         "windows": {
             "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
         },
-        "args": ["config/chromedriver.conf.js", "--spec", "draganddrop.ts"],
+        "args": ["config/chromedriver.conf.js", "--spec", "actions.ts"],
         "autoAttachChildProcesses": true,
         "console": "integratedTerminal"
     },
@@ -27,6 +27,18 @@
       "args": ["config/devtools.conf.js", "--spec", "devtools-performance.ts"],
       "autoAttachChildProcesses": true,
       "console": "integratedTerminal"
-  },
+    },
+    {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch with sauce",
+        "program": "${workspaceFolder}/node_modules/.bin/wdio",
+        "windows": {
+            "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
+        },
+        "args": ["config/sauce.conf.js", "--spec", "actions.ts"],
+        "autoAttachChildProcesses": true,
+        "console": "integratedTerminal"
+    },
   ]
 }

@@ -6,6 +6,7 @@
   "scripts": {
     "test:chromedriver": "npx wdio config/chromedriver.conf.js",
     "test:devtools": "npx wdio config/devtools.conf.js",
+    "test:sauce": "npx wdio config/sauce.conf.js",
     "eslint": "npx eslint ."
   },
   "repository": {
@@ -28,6 +29,7 @@
     "@wdio/devtools-service": "^6.1.11",
     "@wdio/local-runner": "^6.1.12",
     "@wdio/mocha-framework": "^6.1.8",
+    "@wdio/sauce-service": "^6.1.9",
     "@wdio/spec-reporter": "^6.1.12",
     "@wdio/sync": "^6.1.8",
     "chromedriver": "^81.0.0",

@@ -21,7 +21,7 @@ const baseConfig: WebdriverIO.Config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/specs/**/*.ts'
+        './test/specs/the-internet/**/*.ts'
     ],
     // Patterns to exclude.
     exclude: [
@@ -43,7 +43,7 @@ const baseConfig: WebdriverIO.Config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 5,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
