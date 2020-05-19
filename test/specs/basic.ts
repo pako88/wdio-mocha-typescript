@@ -1,6 +1,12 @@
+import Home from 'src/wdio/home.page';
+
+import logger from '@wdio/logger';
+const log = logger('test-basic');
+
 describe('webdriver.io page', () => {
     it('should have the right title', () => {
-        browser.url('https://webdriver.io')
-        expect(browser).toHaveTitle('WebdriverIO · Next-gen browser and mobile automation test framework for Node.js');
+        Home.open();
+        log.debug('check the title'); // just to demonstrate logging in spec file
+        expect(browser).toHaveTitle(Home.title);
     })
 })

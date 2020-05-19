@@ -12,7 +12,7 @@
         "windows": {
             "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
         },
-        "args": ["config/chromedriver.conf.js"],
+        "args": ["config/chromedriver.conf.js", "--spec", "draganddrop.ts"],
         "autoAttachChildProcesses": true,
         "console": "integratedTerminal"
     },
@@ -24,7 +24,7 @@
       "windows": {
           "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
       },
-      "args": ["config/devtools.conf.js"],
+      "args": ["config/devtools.conf.js", "--spec", "devtools-performance.ts"],
       "autoAttachChildProcesses": true,
       "console": "integratedTerminal"
   },

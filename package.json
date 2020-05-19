@@ -32,6 +32,7 @@
     "@wdio/sync": "^6.1.8",
     "chromedriver": "^81.0.0",
     "eslint": "^7.0.0",
+    "html-dnd": "^1.2.1",
     "ts-node": "^8.10.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.2",

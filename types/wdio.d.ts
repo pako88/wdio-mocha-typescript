@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare namespace WebdriverIO {
-  interface Config {
-      logLevel?: string;
-      capabilities?: any;
-  }
+//   interface Config {
+//   }
 
 //   interface Element {
 //   }
