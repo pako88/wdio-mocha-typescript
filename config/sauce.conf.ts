@@ -8,14 +8,48 @@ config.services.push(['sauce', {
     setJobNameInBeforeSuite: true
 }]);
 
-// TODO: add build string etc
-config.capabilities = [{
-    browserName: 'chrome',
-    browserVersion: 'latest',
-    platformName: 'Windows 10',
-    "sauce:options": {
-        build: "local run",
-    }
-}];
+const build = new Date().toISOString();
+config.capabilities = [
+    {
+        browserName: 'chrome',
+        browserVersion: 'latest',
+        platformName: 'Windows 10',
+        "sauce:options": {
+            build: build,
+        }
+    },
+    {
+        browserName: 'firefox',
+        browserVersion: 'latest',
+        platformName: 'Windows 10',
+        "sauce:options": {
+            build: build,
+        }
+    },
+    {
+        browserName: 'MicrosoftEdge',
+        browserVersion: 'latest',
+        platformName: 'Windows 10',
+        "sauce:options": {
+            build: build,
+        }
+    },
+    {
+        browserName: 'internet explorer',
+        browserVersion: 'latest',
+        platformName: 'Windows 10',
+        "sauce:options": {
+            build: build,
+        }
+    },
+    {
+        browserName: 'safari',
+        browserVersion: 'latest',
+        platformName: 'macOS 10.15',
+        "sauce:options": {
+            build: build,
+        }
+    },
+];
 
 export { config };
