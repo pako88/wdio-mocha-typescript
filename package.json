@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "Pascal Koenig",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pako88/wdio-mocha-typescript/issues"
   },
