@@ -14,6 +14,7 @@ config.capabilities = [{
     browserVersion: 'latest',
     platformName: 'Windows 10',
     "sauce:options": {
+        build: "local run",
     }
 }];
 

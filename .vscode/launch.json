@@ -36,7 +36,7 @@
         "windows": {
             "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
         },
-        "args": ["config/sauce.conf.js", "--spec", "actions.ts"],
+        "args": ["config/sauce.conf.js"],
         "autoAttachChildProcesses": true,
         "console": "integratedTerminal"
     },

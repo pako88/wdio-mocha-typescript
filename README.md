@@ -14,6 +14,6 @@
 - actions.ts doesn't work with devtools yet
 
 # Metrics and Test Results
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/pako88.svg)](https://saucelabs.com/u/pako88)
+[![Sauce Test Status](https://app.eu-central-1.saucelabs.com/browser-matrix/pako88.svg)](https://app.eu-central-1.saucelabs.com/u/pako88)
 
 ![Testing Powered By SauceLabs](https://raw.githubusercontent.com/saucelabs/opensource/master/assets/powered-by-saucelabs-badge-red.svg?sanitize=true "Testing Powered By SauceLabs")
