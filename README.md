@@ -10,8 +10,9 @@
 - Cross Platform Example Tests
 - Page Object Model
 
-## Known Limitations
+## Known Limitations and Issues
 - actions.ts doesn't work with devtools yet
+- click isn't working in safari 13, therefore safari 12 is used in this project
 
 # Metrics and Test Results
 [![Sauce Test Status](https://app.eu-central-1.saucelabs.com/browser-matrix/pako88.svg)](https://app.eu-central-1.saucelabs.com/u/pako88)

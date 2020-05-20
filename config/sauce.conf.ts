@@ -44,8 +44,8 @@ config.capabilities = [
     },
     {
         browserName: 'safari',
-        browserVersion: 'latest',
-        platformName: 'macOS 10.15',
+        browserVersion: '12.1',
+        platformName: 'macOS 10.13',
         "sauce:options": {
             build: build,
         }
