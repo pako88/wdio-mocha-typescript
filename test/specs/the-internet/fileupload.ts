@@ -11,6 +11,6 @@ describe('File Upload', () => {
         const remoteFilePath = browser.uploadFile(filePath);
         Upload.fileUploadInput.setValue(remoteFilePath);
         Upload.submitButton.click();
-        expect(Upload.uploadedFiles).toHaveText('fileupload.ts');
+        expect(Upload.uploadedFiles).toHaveTextContaining('fileupload.ts');
     });
 });
