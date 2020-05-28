@@ -8,6 +8,7 @@ declare namespace WebdriverIO {
 
   interface Browser {
       getPuppeteer: () => any;
+      customConfig: () => any;
   }
 }
 

@@ -10,3 +10,9 @@ describe('webdriver.io page', () => {
         expect(browser).toHaveTitle(Home.title);
     })
 })
+
+describe('browser', () => {
+    it('can access custom command', () => {
+        expect(browser.customConfig().text).toBe('Hi Custom Command');
+    })
+})
