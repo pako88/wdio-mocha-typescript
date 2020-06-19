@@ -8,4 +8,3 @@ describe('Dropdown', () => {
         expect(Dropdown.select).toHaveValue('1');
     });
 });
-  

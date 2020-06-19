@@ -50,7 +50,7 @@ const baseConfig: WebdriverIO.Config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-    
+
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
@@ -111,7 +111,7 @@ const baseConfig: WebdriverIO.Config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: [],
-    
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
@@ -130,7 +130,7 @@ const baseConfig: WebdriverIO.Config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: ['spec'],
- 
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -139,7 +139,7 @@ const baseConfig: WebdriverIO.Config = {
         require: 'ts-node/register',
         compilers: [
             'tsconfig-paths/register',
-        ],    
+        ],
     },
     //
     // =====

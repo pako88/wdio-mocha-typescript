@@ -11,4 +11,3 @@ describe('Chained Locator', () => {
         expect(secondItems.length).toBe(50);
     });
 });
-  

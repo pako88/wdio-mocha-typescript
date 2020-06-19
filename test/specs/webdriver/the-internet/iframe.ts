@@ -7,4 +7,3 @@ describe('iFrame', () => {
         expect(TinyMCE.textbox).toHaveText('Your content goes here.');
     });
 });
-  

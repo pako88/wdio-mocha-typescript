@@ -19,6 +19,7 @@ module.exports = {
     ],
     rules: {
         "indent": ["error", 4],
+        "no-trailing-spaces": "error",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",

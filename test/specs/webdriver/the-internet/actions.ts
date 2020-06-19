@@ -4,11 +4,11 @@ describe('Actions', () => {
     it('should work', () => {
         TinyMCE.open();
         browser.switchToFrame(TinyMCE.iframe);
-  
+
         expect(TinyMCE.textbox).toHaveText('Your content goes here.');
-  
+
         TinyMCE.textbox.click();
-  
+
         let actions = [
             {
                 type: 'key',
@@ -21,7 +21,7 @@ describe('Actions', () => {
         ];
         browser.performActions(actions);
         browser.releaseActions();
-  
+
         actions = [
             {
                 type: 'key',
@@ -34,7 +34,7 @@ describe('Actions', () => {
         ];
         browser.performActions(actions);
         browser.releaseActions();
-  
+
         actions = [
             {
                 type: 'key',
@@ -49,8 +49,7 @@ describe('Actions', () => {
         browser.releaseActions();
         browser.performActions(actions);
         browser.releaseActions();
-  
+
         expect(TinyMCE.textbox).toHaveText('Your content goes here.Your content goes here.');
     });
 });
-  

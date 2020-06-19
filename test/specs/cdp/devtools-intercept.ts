@@ -6,7 +6,7 @@ describe('my test', () => {
     it('can use puppeteer', () => {
         // WebDriver command - normal wdio logo
         Home.open();
-  
+
         // switch to Puppeteer to intercept requests
         const puppeteerBrowser = browser.getPuppeteer();
         const page = browser.call(() => puppeteerBrowser.pages())[0];
@@ -19,9 +19,8 @@ describe('my test', () => {
             }
             interceptedRequest.continue();
         }));
-  
+
         // continue with WebDriver commands - wdio logo is replaced with puppeteer logo
         Home.open();
     });
 });
-  
