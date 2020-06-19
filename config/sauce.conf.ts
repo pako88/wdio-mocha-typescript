@@ -8,6 +8,10 @@ config.services.push(['sauce', {
     setJobNameInBeforeSuite: true
 }]);
 
+config.specs = [
+    './test/specs/webdriver/**/*.ts'
+];
+
 const build = new Date().toISOString();
 config.capabilities = [
     {
