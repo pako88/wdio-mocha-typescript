@@ -22,6 +22,7 @@ module.exports = {
         "no-trailing-spaces": "error",
         "eol-last": ["error", "always"],
         "no-multiple-empty-lines": ["error", { max: 2, maxEOF: 0, maxBOF: 0 }],
+        "semi": ["error", "always"],
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",

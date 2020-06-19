@@ -186,7 +186,7 @@ const baseConfig: WebdriverIO.Config = {
         browser.addCommand('customConfig', function () {
             return {
                 text: 'Hi Custom Command'
-            }
+            };
         });
     },
     /**
@@ -279,6 +279,6 @@ const baseConfig: WebdriverIO.Config = {
     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
-}
+};
 
 export { baseConfig };

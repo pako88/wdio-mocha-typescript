@@ -8,11 +8,11 @@ describe('webdriver.io page', () => {
         Home.open();
         log.debug('check the title'); // just to demonstrate logging in spec file
         expect(browser).toHaveTitle(Home.title);
-    })
-})
+    });
+});
 
 describe('browser', () => {
     it('can access custom command', () => {
         expect(browser.customConfig().text).toBe('Hi Custom Command');
-    })
-})
+    });
+});
