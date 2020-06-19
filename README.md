@@ -11,6 +11,10 @@
 - Page Object Model
 
 ## Known Limitations and Issues
+### VSCode
+If you want to debug your tests with breakpoints in VSCode, you have to install the [nightly version of the JavaScript Debugger](https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-debug-nightly)
+
+### Tests
 - click isn't working in safari 13, therefore safari 12 is used in this project
 - actions.ts doesn't work with devtools yet
 - actions.ts doesn't work with safari and ie
