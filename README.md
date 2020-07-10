@@ -18,6 +18,9 @@
 ## Quick Start
 - clone the git repo: `git clone https://github.com/pako88/wdio-mocha-typescript.git`
 - install the dependencies: `npm install`
+- (for cloud execution) set the following environment variables with your sauce labs credentials
+    - SAUCE_USERNAME
+    - SAUCE_ACCESS_KEY
 
 ## Run the Tests
 You can either run the tests with the integrated Visual Studio Code Debug Scripts, or you can run them with one of the following terminal commands.
