@@ -7,8 +7,13 @@ declare namespace WebdriverIO {
 //   }
 
   interface Browser {
-      getPuppeteer: () => any;
       customConfig: () => any;
+  }
+
+  interface BrowserMetrics {
+    firstMeaningfulPaint?: () => number;
+    firstInteractive?: () => number;
+    speedIndex?: () => number;
   }
 }
 

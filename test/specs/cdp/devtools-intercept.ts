@@ -9,16 +9,20 @@ describe('my test', () => {
 
         // switch to Puppeteer to intercept requests
         const puppeteerBrowser = browser.getPuppeteer();
-        const page = browser.call(() => puppeteerBrowser.pages())[0];
-        browser.call(() => page.setRequestInterception(true));
-        browser.call(() => page.on('request', (interceptedRequest) => {
-            if (interceptedRequest.url().endsWith('webdriverio.png')) {
-                return interceptedRequest.continue({
-                    url: 'https://webdriver.io/img/puppeteer.png',
+        browser.call( async () => {
+            const page = (await puppeteerBrowser.pages())[0];
+            await page.setRequestInterception(true);
+            page.on('request', (interceptedRequest) => {
+                (async () => {
+                    if (interceptedRequest.url().endsWith('webdriverio.png')) {
+                        return (await interceptedRequest.continue({
+                            url: 'https://webdriver.io/img/puppeteer.png',
+                        }));
+                    }
+                    await interceptedRequest.continue();
                 });
-            }
-            interceptedRequest.continue();
-        }));
+            });
+        });
 
         // continue with WebDriver commands - wdio logo is replaced with puppeteer logo
         Home.open();
