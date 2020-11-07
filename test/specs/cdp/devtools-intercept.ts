@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 // This test only works with devtools config
 
 import Home from 'src/wdio/home.page';
@@ -12,15 +13,13 @@ describe('my test', () => {
         browser.call( async () => {
             const page = (await puppeteerBrowser.pages())[0];
             await page.setRequestInterception(true);
-            page.on('request', (interceptedRequest) => {
-                (async () => {
-                    if (interceptedRequest.url().endsWith('webdriverio.png')) {
-                        return (await interceptedRequest.continue({
-                            url: 'https://webdriver.io/img/puppeteer.png',
-                        }));
-                    }
-                    await interceptedRequest.continue();
-                });
+            page.on('request', interceptedRequest => {
+                if (interceptedRequest.url().endsWith('webdriverio.png')) {
+                    return interceptedRequest.continue({
+                        url: 'https://webdriver.io/img/puppeteer.png',
+                    });
+                }
+                void interceptedRequest.continue();
             });
         });
 
