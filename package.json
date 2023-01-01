@@ -36,7 +36,7 @@
     "eslint": "^7.13.0",
     "html-dnd": "^1.2.1",
     "ts-node": "^9.0.0",
-    "tsconfig-paths": "^3.9.0",
+    "tsconfig-paths": "^3.10.1",
     "typescript": "^4.0.5",
     "wdio-chromedriver-service": "^6.0.4"
   }
